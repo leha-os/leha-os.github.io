@@ -278,6 +278,22 @@ body h1 i, body h2 i, body h3 i,
   line-height:1.05 !important;
 }
 
+/* // // SECTION: BAI-VIET - BRIEF: Danh sach bai viet cuoi trang | Post index rows - Them bai: copy 1 .post-row, doi so/tieu de/mo ta/link */
+.post-list{margin-top:44px;border-top:1px solid var(--line)}
+.post-row{display:flex;align-items:center;gap:22px;padding:26px 6px;border-bottom:1px solid var(--line);transition:background .35s var(--ease-out),padding .35s var(--ease-out)}
+a.post-row:hover{background:rgba(201,168,106,.10);padding-left:14px}
+.post-num{font-family:var(--font-display);font-size:15px;color:var(--gold);min-width:34px;letter-spacing:.06em}
+.post-body{display:flex;flex-direction:column;gap:6px;flex:1;min-width:0}
+.post-title{font-family:var(--font-display);font-size:clamp(20px,2.6vw,27px);color:var(--ink);letter-spacing:-.02em;line-height:1.2}
+a.post-row:hover .post-title{color:var(--wine-deep)}
+.post-desc{font-size:12.5px;color:var(--ink-soft);line-height:1.6;max-width:560px}
+.post-meta{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;color:var(--muted);white-space:nowrap}
+.post-meta em{font-style:normal;margin:0 6px;color:var(--gold)}
+.post-arrow{font-size:18px;color:var(--wine-deep);transition:transform .35s var(--ease-out);min-width:24px;text-align:right}
+a.post-row:hover .post-arrow{transform:translateX(6px)}
+.post-row.is-soon{opacity:.55;cursor:default}
+@media(max-width:600px){.post-row{gap:14px;padding:20px 2px}.post-meta{display:none}}
+
 </style>
 
 <style>
@@ -320,6 +336,7 @@ img, canvas, video { max-width:100%; height:auto; }
   <h2>Có những công việc nhìn từ ngoài rất bình thường. <br><em>Nhưng để nó diễn ra bình thường, phía sau phải có người nghĩ rất nhiều.</em></h2>
   <p class="lead">Một tin nhắn được trả lời đúng lúc. Một chiếc xe đến đúng giờ. Một căn phòng sạch trước khi khách mở cửa. Một sự kiện bắt đầu mà không ai phải hỏi “bây giờ làm gì?”.</p>
   <blockquote class="story-quote">Tôi yêu vận hành. Tôi thích việc mọi thứ có hệ thống và chạy theo đúng quy trình của nó. Tôi luôn muốn biến một lần làm được thành một quy trình — để mọi thứ có thể tự vận hành, mà chất lượng vẫn nguyên vẹn ở đó.</blockquote>
+  <figure class="image-frame reveal"><img src="https://leha-os.github.io/assets/cover-fb-makeitclear2.jpg" alt="Lê Hà"></figure>
 </section>
 
 <section class="story-block reveal" id="where-it-all-began">
@@ -336,7 +353,17 @@ img, canvas, video { max-width:100%; height:auto; }
 
 <section class="alt-section"><section class="story-block reveal" id="my-operating-system"><div class="big-number">05</div><div class="eyebrow">05 — My Operating System</div><h2>“Không gì là không thể” không phải một khẩu hiệu.</h2><p>Đó là cách tôi đã làm việc trong nhiều năm: <strong>nếu một việc chưa có cách làm, mình tìm cách làm;</strong> nếu cách cũ tốn quá nhiều thời gian, mình tìm cách khác; nếu team chưa biết, mình xây cách để lần sau team biết.</p><blockquote class="story-quote">Nếu hôm nay mất 3 tiếng, tôi sẽ hỏi: lần sau làm thế nào chỉ mất 30 phút — mà không mất chất lượng?</blockquote><p>Tôi yêu công nghệ — không phải vì bản thân nó, mà vì nó trả lại cho tôi thời gian. Mục tiêu rất đơn giản: ít việc thủ công hơn, ít lỗi hơn, dành nhiều thời gian cho những việc quan trọng hơn.</p></section>
 
-<section class="projects-section reveal" id="projects"><div class="projects-intro"><div class="eyebrow">06 — Projects Close to My Heart</div><h2>Không phải việc gì cũng cần mang tên tôi.</h2><p>Có dự án là một thương hiệu. Có dự án là một cộng đồng. Có dự án là một sự kiện. Có dự án là một business đang thành hình. Điểm chung là: tôi đứng ở phía sau, kết nối con người, công việc và hệ thống để mọi thứ thực sự chuyển động.</p></div><div class="project-slider" id="projectSlider"><div class="project-track"><article class="project-card"><div class="project-image placeholder"><span>GolfCare⁺</span></div><div class="project-meta">01 / Golf · Events · MICE</div><h3>GolfCare⁺ Asia</h3><p>Một hệ sinh thái nơi nhiều sợi dây gặp nhau — golf, events, MICE, travel, cộng đồng CLB và partnerships. Chúng tôi tham gia ở phần giữa của những mảnh ghép đó: tổ chức, vận hành, kết nối team, đối tác, khách hàng và biến từng ý tưởng thành một dự án có thể chạy được.</p></article><article class="project-card"><div class="project-image placeholder"><span>Golf279</span></div><div class="project-meta">02 / Community</div><h3>Golf279 & Communities</h3><p>Mỗi CLB có một văn hóa riêng, một nhóm người riêng và một cách vận hành riêng. Công việc của tôi không phải biến tất cả thành một khuôn mẫu, mà là giữ được chất riêng của cộng đồng trong khi làm cho hoạt động, sự kiện và trải nghiệm thành viên rõ ràng hơn.</p></article><article class="project-card"><div class="project-image placeholder"><span>NTC</span></div><div class="project-meta">03 / MICE · Experience</div><h3>Company Trip — NTC Furniture</h3><p>Không bắt đầu bằng câu hỏi: “Làm gì cho đẹp?” <br>Mà bắt đầu bằng câu hỏi: “Sau chuyến đi này, mọi người sẽ nhớ điều gì?”</p></article><article class="project-card"><div class="project-image placeholder"><span>Leon Home</span></div><div class="project-meta">04 / HOSPITALITY · LEASING · OPERATIONS </div><h3>Leon Home</h3><p>Nhìn từ ngoài là một tòa nhà.<br>Bên trong là rất nhiều việc nhỏ: cho thuê, marketing, bàn giao, vận hành, chăm sóc khách thuê và giữ cho trải nghiệm luôn liền mạch. Chúng tôi tham gia ở phần giao giữa business, operations và customer experience — nơi một ý tưởng kinh doanh trở thành một hoạt động vận hành mỗi ngày.</p></article><article class="project-card"><div class="project-image placeholder"><span>Events</span></div><div class="project-meta">05 / Partnerships</div><h3>Events · Clients · Partners</h3><p>Mỗi dự án là một lần thử cách kết nối thương hiệu, con người và trải nghiệm sao cho giá trị không kết thúc khi sự kiện kết thúc. Bởi một partnership tốt không chỉ tạo ra một event. Nó tạo ra lý do để hai bên còn muốn gặp nhau lần nữa.</p></article></div></div><div class="slider-note"><span>Projects I've poured my heart and soul into</span><span class="slider-line"></span></div></section>
+<section class="projects-section reveal" id="projects"><div class="projects-intro"><div class="eyebrow">06 — Projects Close to My Heart</div><h2>Không phải việc gì cũng cần mang tên tôi.</h2><p>Có dự án là một thương hiệu. Có dự án là một cộng đồng. Có dự án là một sự kiện. Có dự án là một business đang thành hình. Điểm chung là: tôi đứng ở phía sau, kết nối con người, công việc và hệ thống để mọi thứ thực sự chuyển động.</p></div><div class="project-slider" id="projectSlider"><div class="project-track"><article class="project-card"><div class="project-image placeholder"><span>GolfCare⁺</span></div>
+<!-- HÌNH DỰ ÁN 1: khi có hình, XÓA dòng div ở trên, XÓA 2 dấu comment của dòng dưới, thay ten-hinh.jpg bằng tên file trong thư mục assets/ -->
+<!-- <div class="project-image"><img src="assets/ten-hinh.jpg" alt="GolfCare⁺ Asia"></div> --><div class="project-meta">01 / Golf · Events · MICE</div><h3>GolfCare⁺ Asia</h3><p>Một hệ sinh thái nơi nhiều sợi dây gặp nhau — golf, events, MICE, travel, cộng đồng CLB và partnerships. Chúng tôi tham gia ở phần giữa của những mảnh ghép đó: tổ chức, vận hành, kết nối team, đối tác, khách hàng và biến từng ý tưởng thành một dự án có thể chạy được.</p></article><article class="project-card"><div class="project-image placeholder"><span>Golf279</span></div>
+<!-- HÌNH DỰ ÁN 2: khi có hình, XÓA dòng div ở trên, XÓA 2 dấu comment của dòng dưới, thay ten-hinh.jpg bằng tên file trong thư mục assets/ -->
+<!-- <div class="project-image"><img src="assets/ten-hinh.jpg" alt="Golf279 & Communities"></div> --><div class="project-meta">02 / Community</div><h3>Golf279 & Communities</h3><p>Mỗi CLB có một văn hóa riêng, một nhóm người riêng và một cách vận hành riêng. Công việc của tôi không phải biến tất cả thành một khuôn mẫu, mà là giữ được chất riêng của cộng đồng trong khi làm cho hoạt động, sự kiện và trải nghiệm thành viên rõ ràng hơn.</p></article><article class="project-card"><div class="project-image placeholder"><span>NTC</span></div>
+<!-- HÌNH DỰ ÁN 3: khi có hình, XÓA dòng div ở trên, XÓA 2 dấu comment của dòng dưới, thay ten-hinh.jpg bằng tên file trong thư mục assets/ -->
+<!-- <div class="project-image"><img src="assets/ten-hinh.jpg" alt="Company Trip — NTC Furniture"></div> --><div class="project-meta">03 / MICE · Experience</div><h3>Company Trip — NTC Furniture</h3><p>Không bắt đầu bằng câu hỏi: “Làm gì cho đẹp?” <br>Mà bắt đầu bằng câu hỏi: “Sau chuyến đi này, mọi người sẽ nhớ điều gì?”</p></article><article class="project-card"><div class="project-image placeholder"><span>Leon Home</span></div>
+<!-- HÌNH DỰ ÁN 4: khi có hình, XÓA dòng div ở trên, XÓA 2 dấu comment của dòng dưới, thay ten-hinh.jpg bằng tên file trong thư mục assets/ -->
+<!-- <div class="project-image"><img src="assets/ten-hinh.jpg" alt="Leon Home"></div> --><div class="project-meta">04 / HOSPITALITY · LEASING · OPERATIONS </div><h3>Leon Home</h3><p>Nhìn từ ngoài là một tòa nhà.<br>Bên trong là rất nhiều việc nhỏ: cho thuê, marketing, bàn giao, vận hành, chăm sóc khách thuê và giữ cho trải nghiệm luôn liền mạch. Chúng tôi tham gia ở phần giao giữa business, operations và customer experience — nơi một ý tưởng kinh doanh trở thành một hoạt động vận hành mỗi ngày.</p></article><article class="project-card"><div class="project-image placeholder"><span>Events</span></div>
+<!-- HÌNH DỰ ÁN 5: khi có hình, XÓA dòng div ở trên, XÓA 2 dấu comment của dòng dưới, thay ten-hinh.jpg bằng tên file trong thư mục assets/ -->
+<!-- <div class="project-image"><img src="assets/ten-hinh.jpg" alt="Events · Clients · Partners"></div> --><div class="project-meta">05 / Partnerships</div><h3>Events · Clients · Partners</h3><p>Mỗi dự án là một lần thử cách kết nối thương hiệu, con người và trải nghiệm sao cho giá trị không kết thúc khi sự kiện kết thúc. Bởi một partnership tốt không chỉ tạo ra một event. Nó tạo ra lý do để hai bên còn muốn gặp nhau lần nữa.</p></article></div></div><div class="slider-note"><span>Projects I've poured my heart and soul into</span><span class="slider-line"></span></div></section>
 
 <section class="alt-section"><section class="story-block story-block--wide reveal" id="creating-now"><div class="eyebrow">07 — What I'm Creating Now</div><h2>Make it clear.<br><em>Make it move.</em></h2><div class="split-note" style="display:grid;grid-template-columns:1fr 1fr;gap:55px;margin-top:35px"><p>Hiện tại, tôi tập trung vào hai việc.
 <br>Một là xây GolfCare⁺ thành một hệ thống thay vì chỉ là một dịch vụ.<br>Hai là xây một team đủ năng lực để tự vận hành phần lớn công việc.</p><p>Không phải để tôi làm ít đi. Mà để tôi có thể dành thời gian cho phần khó hơn: những quyết định quan trọng và những việc không thể giao bằng checklist.</section>
@@ -348,6 +375,32 @@ img, canvas, video { max-width:100%; height:auto; }
   </div>
   <p class="closing-copy">
   Đó có lẽ là cách tôi đo sự trưởng thành của một người làm vận hành: <strong>không phải mình giỏi đến mức nào khi có mặt, mà là mọi thứ tốt lên thế nào sau khi mình đã đi qua.</strong></p>
+</section>
+
+<section class="story-block story-block--wide reveal" id="bai-viet">
+  <div class="eyebrow">Bài viết</div>
+  <h2>Những điều tôi <em>viết lại.</em></h2>
+  <p class="lead">Chuyện nghề, chuyện người, chuyện những hệ thống phía sau — viết ra để nhớ, và để ai đó đỡ phải mò lại từ đầu.</p>
+  <div class="post-list">
+    <a class="post-row" href="lam-toi-cung.html">
+      <span class="post-num">01</span>
+      <span class="post-body">
+        <span class="post-title">Làm tới cùng</span>
+        <span class="post-desc">Tôi có một cái tính: đã làm cái gì thì làm tới cùng. Một là win, hai là bị hiện thực tát cho vỡ mặt mới chịu bỏ.</span>
+      </span>
+      <span class="post-meta">10.2026<em>·</em>Tản văn</span>
+      <span class="post-arrow">→</span>
+    </a>
+    <div class="post-row is-soon">
+      <span class="post-num">02</span>
+      <span class="post-body">
+        <span class="post-title">Chuyện Hàn Quốc</span>
+        <span class="post-desc">Mấy năm làm với sếp Hàn, một lần đi Hàn — và những điều tôi học được ở giữa hai cách làm việc.</span>
+      </span>
+      <span class="post-meta">Sắp ra mắt</span>
+      <span class="post-arrow">—</span>
+    </div>
+  </div>
 </section>
 
 <footer><span>© Lê Hà</span><span>Operations · Golf · MICE · Travel</span></footer>
@@ -590,7 +643,7 @@ function initTextAnim(){
     const hasEm = html.includes('<em') || html.includes('<i>') || html.includes('<strong');
     if(TEXT_ANIM_CONFIG.enableSplitWords && el.tagName==='H2' && !hasEm){
       const words=el.textContent.split(' ');
-      el.innerHTML=`<span class="text-reveal-inner" style="display:inline">${words.map((w,j)=>`<span style="display:inline-block;overflow:hidden"><span style="display:inline-block;transform:translateY(115%);transition:transform ${TEXT_ANIM_CONFIG.duration} ${TEXT_ANIM_CONFIG.easing} ${j*TEXT_ANIM_CONFIG.wordDelay}ms" class="word-inner">${w}&nbsp;</span></span>`).join('')}</span>`;
+      el.innerHTML=`<span class="text-reveal-inner" style="display:inline">${words.map((w,j)=>`<span style="display:inline-block;overflow:hidden;padding-bottom:.14em;margin-bottom:-.14em"><span style="display:inline-block;transform:translateY(115%);transition:transform ${TEXT_ANIM_CONFIG.duration} ${TEXT_ANIM_CONFIG.easing} ${j*TEXT_ANIM_CONFIG.wordDelay}ms" class="word-inner">${w}&nbsp;</span></span>`).join('')}</span>`;
       el._words=el.querySelectorAll('.word-inner');
     } else {
       el.innerHTML=`<span class="text-reveal-inner" style="transition-duration:${TEXT_ANIM_CONFIG.duration};transition-timing-function:${TEXT_ANIM_CONFIG.easing};transition-delay:${(i%4)*0.05}s">${html}</span>`;
