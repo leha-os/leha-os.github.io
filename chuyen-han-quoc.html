@@ -106,6 +106,8 @@ letter-spacing:-0.02em;transition:.32s;border:1px solid transparent;cursor:point
 .mid-img.wide img{aspect-ratio:auto}
 .row-date{display:none}
 @media(max-width:600px){.row-date{display:block;text-align:right;margin-top:6px;font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;color:var(--muted)}}
+.ripple{position:fixed;width:12px;height:12px;border-radius:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:9999;animation:rippleAnim .9s ease-out forwards}
+@keyframes rippleAnim{0%{transform:translate(-50%,-50%) scale(1);opacity:.8}100%{transform:translate(-50%,-50%) scale(24);opacity:0}}
 </style>
 </head>
 <body>
@@ -174,13 +176,13 @@ letter-spacing:-0.02em;transition:.32s;border:1px solid transparent;cursor:point
 <script>
 (function(){
   var items=[
-    {label:"TRANG CHỦ",href:"index.html"},
-    {label:"CHUYỆN HÀN QUỐC",href:"#top"},
-    {label:"CHI TIẾT",href:"#chi-tiet"},
-    {label:"TỐC ĐỘ",href:"#toc-do"},
-    {label:"HIỀN MÀ KHÔNG DỄ",href:"#hien-ma-khong-de"},
-    {label:"KẾT LẠI",href:"#ket-lai"},
-    {label:"BÀI VIẾT",href:"#bai-viet"}
+    {label:"01 Trang chủ",href:"index.html"},
+    {label:"02 Chuyện Hàn Quốc",href:"#top"},
+    {label:"03 Chi tiết",href:"#chi-tiet"},
+    {label:"04 Tốc độ",href:"#toc-do"},
+    {label:"05 Hiền mà không dễ",href:"#hien-ma-khong-de"},
+    {label:"06 Điều tôi học được",href:"#ket-lai"},
+    {label:"07 Bài viết",href:"#bai-viet"}
   ];
   var panel=document.getElementById('menuPanel'),overlay=document.getElementById('menuOverlay'),btn=document.getElementById('menuBtn');
   panel.innerHTML='<div class="menu-items">'+items.map(function(it,i){
@@ -191,6 +193,7 @@ letter-spacing:-0.02em;transition:.32s;border:1px solid transparent;cursor:point
   overlay.addEventListener('click',close);
   document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
   document.getElementById('brandHome').addEventListener('click',function(){location.href='index.html';});
+  document.addEventListener('pointerdown',function(e){var r=document.createElement('div');r.className='ripple';r.style.left=e.clientX+'px';r.style.top=e.clientY+'px';r.style.background='radial-gradient(circle, #ca833976 0%, transparent 70%)';document.body.appendChild(r);setTimeout(function(){r.remove();},900);},{passive:true});
 })();
 window.addEventListener('scroll',function(){document.getElementById('nav').style.top=(scrollY>25)?'8px':'12px';},{passive:true});
 </script>
