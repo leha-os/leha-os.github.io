@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<script>document.documentElement.classList.add("js")</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEHA — Chuyện Hàn Quốc</title>
+<meta property="og:title" content="LEHA — Chuyện Hàn Quốc">
+<meta property="og:description" content="Nhiều năm làm việc với người Hàn — và những điều tôi học được ở giữa hai cách làm việc.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://leha-os.github.io/chuyen-han-quoc.html">
+<meta property="og:image" content="https://leha-os.github.io/assets/leha-korea.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LEHA — Chuyện Hàn Quốc">
+<meta name="twitter:description" content="Nhiều năm làm việc với người Hàn — và những điều tôi học được ở giữa hai cách làm việc.">
+<meta name="twitter:image" content="https://leha-os.github.io/assets/leha-korea.jpg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:wght@300;400;500;600&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+:root{
+  --bg:#fbf9f4; --ink:#1e1b18; --ink-soft:#625b54; --muted:#938a80;
+  --wine:#5c2630; --wine-deep:#6b1d2a; --gold:#c9a86a; --line:rgba(30,27,24,.12);
+  --font-display:'Playfair Display',serif; --font-body:'Be Vietnam Pro',sans-serif; --font-mono:'JetBrains Mono',monospace;
+  --ease-out:cubic-bezier(.16,1,.3,1);
+  --max:1040px;
+  --paper:#f3eee5;
+  --reading:680px;
+}
+*{box-sizing:border-box}
+body{margin:0;padding-top:100px;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-weight:350;line-height:1.8;letter-spacing:-.01em;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--gold);color:#fff}
+html.js .reveal{opacity:0;transform:translateY(28px);transition:opacity 1.1s var(--ease-out),transform 1.1s var(--ease-out)}
+html.js .reveal.in{opacity:1;transform:translateY(0)}
+.brand{font:800 15px/1 'Manrope',sans-serif;font-size:30px;letter-spacing:-0em;cursor:pointer;display:flex;align-items:center;gap:10px;color:#171515dc}
+.hero{max-width:1040px;margin:34px auto 0;padding:0 28px;text-align:center}
+.eyebrow{font-family:var(--font-mono);font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--wine);margin:0 0 14px}
+h1{font-family:var(--font-display);font-weight:700;font-size:clamp(38px,6vw,64px);letter-spacing:-.03em;line-height:1.12;margin:0 0 14px;color:var(--ink)}
+h1 em{font-style:italic;color:var(--wine);font-weight:500}
+.deck{color:var(--ink-soft);font-size:15px;max-width:560px;margin:0 auto}
+.rule{width:56px;height:2px;background:var(--gold);margin:34px auto 0}
+.article{max-width:680px;margin:0 auto;padding:44px 28px 30px}
+.article p{margin:0 0 26px;font-size:15.5px}
+.pq{margin:38px 0;padding:6px 0 6px 26px;border-left:2px solid var(--wine);font-family:var(--font-display);font-style:italic;font-size:clamp(20px,3vw,26px);line-height:1.5;color:var(--wine-deep)}
+.mid-img{margin:40px 0;position:relative;border-radius:18px;overflow:hidden;box-shadow:0 25px 70px rgba(44,35,29,.10)}
+.mid-img img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;display:block}
+.mid-img figcaption{padding:12px 16px;font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);background:rgba(255,253,248,.92)}
+.signoff{margin-top:44px;padding-top:26px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.signoff .who{font-family:var(--font-display);font-size:19px}
+.signoff .date{font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;color:var(--muted)}
+.closing{padding:240px 28px 140px;text-align:center;position:relative;overflow:hidden}
+.closing .eyebrow{margin-bottom:28px}
+.closing-title{font-size:clamp(55px,10vw,120px);line-height:.86;letter-spacing:-.075em}
+.closing-title .line-a{font-family:'Playfair Display',serif;display:block}
+.closing-title .line-b{font:800 clamp(43px,8vw,100px)/.92 'Playfair Display',serif;display:block;text-transform:uppercase}
+.closing-title em{font:400 .98em/1 'Instrument Serif',serif;color:var(--wine);text-transform:lowercase;letter-spacing:-.03em}
+footer{border-top:1px solid var(--line);padding:32px 28px 45px;display:flex;justify-content:space-between;gap:20px;width:min(1040px,100%);margin:auto;color:var(--muted);font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+@media(max-width:600px){footer{flex-direction:column;gap:6px}footer{flex-direction:column;gap:6px}}
+.nav{position:fixed;top:12px;left:50%;transform:translateX(-50%);width:min(calc(100% - 24px), var(--max));z-index:90;padding:0 18px 0 20px;height:64px;display:flex;align-items:center;justify-content:space-between;border-radius:999px;border:1px solid transparent;background:transparent;backdrop-filter:blur(150px) saturate(1.6);-webkit-backdrop-filter:blur(150px) saturate(1.6);transition:all .4s var(--ease-out)}
+.nav.scrolled{top:8px;background:transparent;box-shadow:none;border-color:transparent;backdrop-filter:none;-webkit-backdrop-filter:none}
+.nav-row{width:100%;display:flex;align-items:center;justify-content:space-between}
+.menu-btn{border:0;background:rgba(255,255,255,0.72);color:var(--ink);border-radius:999px;padding:0;width:44px;height:44px;display:grid;place-items:center;cursor:pointer;border:1px solid rgba(0,0,0,0.08);position:relative;overflow:hidden;backdrop-filter:blur(10px);transition:.3s}
+.menu-btn .line{width:18px;height:2px;background:var(--ink);border-radius:2px;position:absolute;transition:.45s var(--ease-out);display:block}
+.menu-btn .line:nth-child(1){transform:translateY(-5px)}
+.menu-btn .line:nth-child(3){transform:translateY(5px)}
+.menu-btn.open .line:nth-child(1){transform:rotate(45deg)}
+.menu-btn.open .line:nth-child(2){opacity:0;transform:scaleX(0)}
+.menu-btn.open .line:nth-child(3){transform:rotate(-45deg)}
+.menu-overlay{position:fixed;inset:0;z-index:94;background:rgba(30,27,24,0.12);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);opacity:0;pointer-events:none;transition:.5s var(--ease-out)}
+.menu-overlay.open{opacity:1;pointer-events:auto}
+.menu-panel{position:fixed;top:0;right:0;width:350px;max-width:calc(100vw - 12px); height:100dvh;height:100svh;z-index:95;background:rgba(251,249,244,0.32);backdrop-filter:blur(22px) saturate(1.4);-webkit-backdrop-filter:blur(39px) saturate(1.4);border-left:1px solid rgba(0,0,0,0.06);box-shadow:-20px 0 80px rgba(0,0,0,0.08);transform:translateX(100%);transition:transform .68s var(--ease-out);display:flex;flex-direction:column;padding:92px 24px 24px;overflow-y:auto;box-sizing:border-box}
+.menu-panel.open{transform:translateX(0)}
+.menu-items{display:flex;flex-direction:column;gap:6px}
+.menu-item{opacity:0;transform:translateY(18px) scale(.98);transition:.6s var(--ease-out)}
+.menu-panel.open .menu-item{opacity:1;transform:translateY(0) scale(1)}
+.menu-link{display:flex;justify-content:space-between;align-items:center;padding:20px 16px;border-radius:14px;font-family:'Be Vietnam Pro',sans-serif;font-weight:300;font-size:13.2px;color:#333232;/* SIZE CHU MENU*/
+letter-spacing:-0.02em;transition:.32s;border:1px solid transparent;cursor:pointer}
+.menu-link:hover{background:rgba(0,0,0,0.04);border-color:rgba(0,0,0,0.06);transform:translateX(3px)}
+.menu-sub{max-height:0;overflow:hidden;transition:max-height .55s var(--ease-out), opacity .35s;padding-left:12px;display:flex;flex-direction:column;gap:2px;opacity:0}
+.menu-sub.open{max-height:500px;opacity:1;margin:6px 0 10px}
+.menu-sub a{font-size:12px;padding:9px 14px;border-radius:10px;color:var(--ink-soft);transition:.25s}
+.menu-sub a:hover{background:rgba(166, 28, 50, 0.1803921568627451);color:var(--ink);transform:translateX(4px)}
+.menu-foot{margin-top:auto;padding-top:24px;border-top:1px solid rgba(0,0,0,0.06);font-family:'Be Vietnam Pro',monospace;font-size:11px;letter-spacing:.03em;color:var(#3b38384e);display:flex;flex-direction:column;gap:8px}
+.nav{width:calc(100% - 16px)}
+
+.story-block{width:min(var(--reading),100%);margin:0 auto;padding:112px 28px;position:relative;transition:transform .7s var(--ease-out), box-shadow .7s;will-change:transform}
+.story-block--wide{width:min(1040px,100%)}
+.story-block h2{font-size:clamp(32px,5vw,52px);line-height:1.06;letter-spacing:-.04em;margin-bottom:27px}
+.eyebrow{font:600 12px/1.2 'Manrope';letter-spacing:.18em;text-transform:uppercase;color:var(--wine);margin-bottom:21px}
+.post-list{margin-top:44px;border-top:1px solid var(--line)}
+.post-row{display:flex;align-items:center;gap:22px;padding:26px 6px;border-bottom:1px solid var(--line);transition:background .35s var(--ease-out),padding .35s var(--ease-out)}
+.post-row:hover{background:rgba(201,168,106,.10);padding-left:14px}
+.post-row:hover .post-title{color:var(--wine-deep)}
+.post-num{font-family:var(--font-display);font-size:15px;color:var(--gold);min-width:34px;letter-spacing:.06em}
+.post-body{display:flex;flex-direction:column;gap:6px;flex:1;min-width:0}
+.post-title{font-family:var(--font-display);font-size:clamp(20px,2.6vw,27px);color:var(--ink);letter-spacing:-.02em;line-height:1.2}
+.post-desc{font-size:12.5px;color:var(--ink-soft);line-height:1.6;max-width:560px}
+.post-meta{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;color:var(--muted);white-space:nowrap}
+.post-arrow{font-size:18px;color:var(--wine-deep);transition:transform .35s var(--ease-out);min-width:24px;text-align:right}
+.is-soon{opacity:.55;cursor:default}
+.story-block h2 em{font-family:'Playfair Display',serif !important;font-style:italic !important;font-weight:700 !important;color:#6b1d2a !important;letter-spacing:-0.02em !important;}
+.lead{font-size:15px;line-height:1.45;color:var(--ink-soft);margin-top:28px;max-width:610px}
+@media(max-width:600px){.post-row{gap:14px;padding:20px 2px}.post-meta{display:none}}
+.alt-section{background:var(--paper)}
+[id]{scroll-margin-top:90px}
+.mid-img.wide{max-width:680px}
+.mid-img.wide img{aspect-ratio:auto}
+</style>
+</head>
+<body>
+<nav class="nav" id="nav"><div class="nav-row"><div class="brand" id="brandHome" style="cursor:pointer">LÊ HÀ <span>·</span></div><button class="menu-btn" id="menuBtn" type="button" aria-label="Menu"><span class="line"></span><span class="line"></span><span class="line"></span></button></div></nav>
+<div class="menu-overlay" id="menuOverlay"></div>
+<aside class="menu-panel" id="menuPanel"></aside>
+<div class="hero" id="top">
+  <div class="eyebrow reveal">Bài viết · 10.2024</div>
+  <h1 class="reveal">Chuyện <em>Hàn Quốc</em></h1>
+  <p class="deck reveal">Nhiều năm làm việc với người Hàn — và những điều tôi học được ở giữa hai cách làm việc.</p>
+  <div class="rule reveal"></div>
+</div>
+<div class="alt-section"><article class="article">
+  <p class="reveal">Tôi làm việc với người Hàn nhiều năm — đồng nghiệp, khách hàng, đối tác. Người ta hay hỏi tôi: làm với người Hàn có khó không? Tôi cười. Khó thì có khó, nhưng khó theo cách khiến mình giỏi lên. Sang Hàn nhiều, tôi càng thấm: những điều này không phải tính cách của riêng ai — đó là cách cả một đất nước làm việc.</p>
+  <p class="reveal" id="chi-tiet">Điều đầu tiên tôi nhận ra: với họ không có khái niệm “tạm được”. Một cái bàn kê lệch 2cm cũng phải sửa. Một email gửi khách thiếu một dấu chấm cũng bị gọi lên. Người khác thấy ngột ngạt — tôi thì không. Vì nói thật, tính tôi cũng khó chịu y như vậy. Với chúng tôi, chi tiết không phải là khó tính — chi tiết là tôn trọng.</p>
+  <blockquote class="pq reveal">Người Hàn không làm nhiều hơn mình. Họ làm kỹ hơn mình.</blockquote>
+  <figure class="mid-img reveal"><img src="https://leha-os.github.io/assets/leha-korea.jpg" alt="Lê Hà"><figcaption>Seoul, Hàn Quốc</figcaption></figure>
+  <p class="reveal">Câu đó tôi mang theo đến tận bây giờ. Mỗi lần setup một sự kiện golf, tôi vẫn đi một vòng kiểm tra từng chi tiết nhỏ như hồi đó: bàn ghế, âm thanh, cái bảng tên khách đặt có thẳng không. Team hay trêu tôi khó tính. Tôi cười — khó tính mà khách yên tâm thì khó tính cũng được.</p>
+  <p class="reveal" id="toc-do">Điều thứ hai: tốc độ. Họp sáng quyết, chiều làm, tối báo kết quả. Không có “để em nghiên cứu thêm rồi báo cáo”. Sai thì sửa — nhanh hơn là ngồi nghĩ cho đúng ngay từ đầu. Cái này đập thẳng vào thói quen của tôi hồi đó: tôi hay chuẩn bị kỹ rồi mới dám làm. Mấy năm đó dạy tôi điều ngược lại: làm trước, chuẩn trong lúc làm.</p>
+<figure class="mid-img wide reveal"><img src="https://leha-os.github.io/assets/leha-korea2.jpg" alt="Hàn Quốc"></figure>
+  <p class="reveal" id="hien-ma-khong-de">Điều thứ ba tôi để ý ở những người Hàn tôi từng làm cùng: hiền mà không dễ. Có người hiền lắm — mấy năm tôi chưa từng thấy mắng ai một câu nào. Nhưng hiền không có nghĩa là dễ dãi. Người chịu khó nhất phòng thường chính là người đó: việc khó nhất tự tay làm trước, việc nặng nhất không đẩy cho ai. Không cần to tiếng, cả phòng tự nhiên làm theo. Tôi học được một điều: uy không đến từ giọng to — uy đến từ việc mình làm nhiều hơn mình nói.</p>
+  <p class="reveal">Mấy năm đó cho tôi ba thứ: chuẩn mực trong từng chi tiết, tốc độ trong từng quyết định, và một cách đối xử với con người — nghiêm với việc, nhẹ với người.</p>
+  <p class="reveal">Bây giờ, làm với team Việt, cái tôi học được từ những năm tháng cũ: chi tiết, tốc độ, và dám nghe điều khó nghe. Chỉ khác là giờ tôi làm theo cách của mình: chuẩn thì giữ, còn cách đối xử với con người thì tôi chọn cách nhẹ nhàng hơn.</p>
+  <p class="reveal" id="ket-lai">Có lẽ đó là điều quý nhất tôi học được: người ta không ở lại vì sợ — họ ở lại vì muốn.</p>
+  <div class="signoff reveal"><span class="who">Lê Hà</span><span class="date">10.2024</span></div>
+</article></div>
+<section class="story-block story-block--wide reveal" id="bai-viet">
+  <div class="eyebrow">Bài viết</div>
+  <h2>Những điều tôi <em>viết lại.</em></h2>
+  <p class="lead">Chuyện nghề, chuyện người, chuyện những hệ thống phía sau — viết ra để nhớ, và để ai đó đỡ phải mò lại từ đầu.</p>
+  <div class="post-list">
+    <a class="post-row" href="chuyen-han-quoc.html">
+      <span class="post-num">01</span>
+      <span class="post-body">
+        <span class="post-title">Chuyện Hàn Quốc</span>
+        <span class="post-desc">Nhiều năm làm việc với người Hàn — và những điều tôi học được ở giữa hai cách làm việc.</span>
+      </span>
+      <span class="post-meta">10.2024<em>·</em>Tản văn</span>
+      <span class="post-arrow">→</span>
+    </a>
+    <div class="post-row is-soon">
+      <span class="post-num">02</span>
+      <span class="post-body">
+        <span class="post-title">Làm tới cùng</span>
+        <span class="post-desc">Tôi có một cái tính: đã làm cái gì thì làm tới cùng. Một là win, hai là bị hiện thực tát cho vỡ mặt mới chịu bỏ.</span>
+      </span>
+      <span class="post-meta">Sắp ra mắt</span>
+      <span class="post-arrow">—</span>
+    </div>
+  </div>
+</section>
+<div class="alt-section"><section class="closing reveal">
+  <div class="closing-title">
+    <span class="line-a"><b style="font-weight:800;text-transform:lowercase !important;">make it</b> clear</span>
+    <span class="line-b"><b style="font-weight:800;text-transform:lowercase !important;">make it</b> <em style="font-weight:800;font-style:italic;">move.</em></span>
+  </div>
+</section></div>
+<div class="alt-section"><footer><span>© Lê Hà</span><span>Operations · Golf · MICE · Travel</span></footer></div>
+<script>
+(function(){
+  var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+})();
+</script>
+<script>
+(function(){
+  var items=[
+    {label:"TRANG CHỦ",href:"index.html"},
+    {label:"CHUYỆN HÀN QUỐC",href:"#top"},
+    {label:"CHI TIẾT",href:"#chi-tiet"},
+    {label:"TỐC ĐỘ",href:"#toc-do"},
+    {label:"HIỀN MÀ KHÔNG DỄ",href:"#hien-ma-khong-de"},
+    {label:"KẾT LẠI",href:"#ket-lai"},
+    {label:"BÀI VIẾT",href:"#bai-viet"}
+  ];
+  var panel=document.getElementById('menuPanel'),overlay=document.getElementById('menuOverlay'),btn=document.getElementById('menuBtn');
+  panel.innerHTML='<div class="menu-items">'+items.map(function(it,i){
+    return '<div class="menu-item" style="transition-delay:'+(i*70)+'ms"><a class="menu-link" href="'+it.href+'"><span>'+it.label+'</span></a></div>';
+  }).join('')+'</div><div class="menu-foot"><div>leha.pm@golfcare.asia · (84) 98 3351 744</div></div>';
+  function close(){panel.classList.remove('open');overlay.classList.remove('open');btn.classList.remove('open');document.body.style.overflow='';}
+  btn.addEventListener('click',function(e){e.stopPropagation();panel.classList.contains('open')?close():(panel.classList.add('open'),overlay.classList.add('open'),btn.classList.add('open'),document.body.style.overflow='hidden');});
+  overlay.addEventListener('click',close);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+  document.getElementById('brandHome').addEventListener('click',function(){location.href='index.html';});
+})();
+window.addEventListener('scroll',function(){document.getElementById('nav').style.top=(scrollY>25)?'8px':'12px';},{passive:true});
+</script>
+</body>
+</html>
